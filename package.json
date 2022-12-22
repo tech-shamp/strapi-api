@@ -7,7 +7,9 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
+    "start:win": "cross-env NODE_ENV=production npm start",
     "build": "strapi build",
+    "build:win": "cross-env NODE_ENV=production npm run build",
     "strapi": "strapi"
   },
   "devDependencies": {},
@@ -18,6 +20,7 @@
     "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/strapi": "4.5.3",
     "better-sqlite3": "7.4.6",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.2",
     "koa": "2.13.1",
     "pg": "^8.8.0",
@@ -32,7 +35,7 @@
     "uuid": "0219f823-d4fe-4104-a1d8-32c7a61634b8"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=12.x.x <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
