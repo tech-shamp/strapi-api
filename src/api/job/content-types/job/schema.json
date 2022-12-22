@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Jobs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 110,
+      "targetField": "title"
+    },
+    "designation": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 110
+    },
+    "salary": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "minLength": 300,
+      "required": true
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location",
+      "inversedBy": "job"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidates",
+  "info": {
+    "singularName": "candidate",
+    "pluralName": "candidates",
+    "displayName": "Candidates"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AppliedJobs": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::job.job"
+    }
+  }
+}

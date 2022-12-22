@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employers",
+  "info": {
+    "singularName": "employer",
+    "pluralName": "employers",
+    "displayName": "Employers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PostedJobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job.job"
+    },
+    "role": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

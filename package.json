@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "1.0",
+  "description": "jobly backend server",
+  "homepage": "https://strapi.jobly.pk/",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@babel/core": "7.0.0",
+    "@strapi/plugin-graphql": "^4.5.3",
+    "@strapi/plugin-i18n": "4.5.3",
+    "@strapi/plugin-users-permissions": "4.5.3",
+    "@strapi/strapi": "4.5.3",
+    "better-sqlite3": "7.4.6",
+    "css-loader": "^6.7.2",
+    "koa": "2.13.1",
+    "pg": "^8.8.0",
+    "react-is": "16.8.0",
+    "style-loader": "^3.3.1",
+    "webpack": "5.74.0"
+  },
+  "author": {
+    "name": "TechShamp, iboy"
+  },
+  "strapi": {
+    "uuid": "0219f823-d4fe-4104-a1d8-32c7a61634b8"
+  },
+  "engines": {
+    "node": "18.12.1",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

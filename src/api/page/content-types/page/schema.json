@@ -1,0 +1,79 @@
+{
+  "kind": "singleType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "CandidateProfile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Age": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Designation": {
+      "type": "string"
+    },
+    "Skills": {
+      "type": "string"
+    },
+    "Experience": {
+      "type": "string"
+    },
+    "Summary": {
+      "type": "string"
+    },
+    "WorkHistory": {
+      "type": "string"
+    },
+    "Projects": {
+      "type": "string"
+    },
+    "Certifications": {
+      "type": "string"
+    },
+    "Education": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "SeekingJob": {
+      "type": "boolean",
+      "default": true
+    },
+    "Industry": {
+      "type": "string"
+    },
+    "Awards": {
+      "type": "string"
+    },
+    "Hobbies": {
+      "type": "string"
+    },
+    "Languages": {
+      "type": "string"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
